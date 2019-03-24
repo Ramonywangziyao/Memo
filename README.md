@@ -4,6 +4,9 @@
 ## Introduction
 This is an open-source & non-profit & public benefit project. It is inspired by the sudden leave of one of my dearest friend. Hope everyone left this world can be commemorated by his/her friends, family and familiar people from anytime and anywhere in the world, and their story will be store online forever. R.I.P.
 
+## Tech
+### Express + MongoDB
+
 ## Decription
 ### Memorize A Soul
 This function is performed to upload the file of a soul to the site. This profile can be searched by a specific #hashtag defined by the uploader.
