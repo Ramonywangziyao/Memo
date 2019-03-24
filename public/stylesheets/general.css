@@ -1,0 +1,33 @@
+::placeholder {
+  color: #e0e0e0;
+}
+
+#bottomMenu {
+  list-style-type: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: 50px;
+  padding: 0;
+}
+
+#bottomMenuItem {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2em;
+}
+
+#bottomMenuLi {
+  color: white;
+  font-size: 1em;
+  display: inline;
+}
+
+#githublogo {
+  width: 30px;
+  height: 30px;
+  margin-left: 15px;
+  position: absolute;
+  top: 30px;
+}

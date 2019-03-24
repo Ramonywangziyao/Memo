@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ title }}</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' href='/stylesheets/general.css' />
+  </head>
+  <body>
+    <div id = "frame">
+      <div id = "top">
+        <div id = "logo_sec">
+          <img src = "/images/logo.png" id = "logo"/>
+        </div>
+        <div id = "slogan_sec">
+          <p id = "slogan">Wish everyone who is away from us rest in peace.</p>
+        </div>
+      </div>
+      <div id = "middle">
+        <div id = "leftType">
+            <input type="text" id="hashtagTextfield" placeholder="Please type the hashtag to give your dearest friend the best wishes....">
+        </div>
+        <div id = "rightSubmit">
+          <button type="button" id="search">Search</button>
+        </div>
+        <div id = "addFriendSec">
+          <button type="button" id="addFriend">+ Memorize a Soul</button>
+        </div>
+      </div>
+      <div id = "bottom">
+        <ul id="bottomMenu">
+          <li id = "bottomMenuLi"><a href = "http://localhost:3000/about" id="bottomMenuItem">About</a></li>
+          <br/>
+          <br/>
+          <li id = "bottomMenuLi">© 2019 Memo project community</li>
+          <li id = "bottomMenuLi"><a href = "https://github.com/Ramonywangziyao/Memo"><img src="/images/githublogo.png"/ id="githublogo"></a></li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

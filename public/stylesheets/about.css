@@ -1,0 +1,77 @@
+body {
+  padding: 0x;
+  margin: auto;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+#frame {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: auto;
+  background-color: black;
+  padding: 0px;
+  margin: auto;
+  position: absolute;
+}
+
+#top {
+  position: relative;
+  height: 10%;
+  width: 100%;
+  background-color: black;
+}
+
+#middle {
+  position: relative;
+  height: 80%;
+  background-color: black;
+  width: 100%;
+}
+
+#bottom {
+  position: relative;
+  height: 10%;
+  background-color: black;
+  width: 100%;
+  text-align: center;
+}
+
+#backHomeButton {
+  position: absolute;
+  left: 50px;
+  text-decoration: none;
+  color: white;
+  font-size: 1.3em;
+  top: 20px;
+}
+
+#title {
+  position: relative;
+  height: 10%;
+  background-color: black;
+  width: 50%;
+  margin: auto;
+}
+
+#content {
+  position: relative;
+  height: 90%;
+  background-color: black;
+  width: 50%;
+  margin: auto;
+}
+
+#aboutTitle {
+  position: absolute;
+  left: 20px;
+  color: white;
+  font-size: 2.5em;
+}
+
+#contentStyle {
+  padding: 20px 20px 20px 20px;
+  color: white;
+  font-size: 1.3em;
+}
