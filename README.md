@@ -42,6 +42,9 @@ Each soul can have its own gallery or personal docs shown to the world and those
 ### Invite Wishes
 This is a big and meaningful functionality. It means each uploader can decide to allow that profile to be shown to the world for a certain amount of time, so on a exploring like page, it can be seen by everyone and everyone can go to that profile, read their story and offer their wishes, how wonderful!
 
+### Offensive Content Detection
+The ability to detect any kind of offensive content should be gained automatically and manually. We cannot add more harm to their family!
+
 ### Donation
 This allows people goes to that profile can donate a certain amount of money to the family who lost their love. It will be very warm.
 
