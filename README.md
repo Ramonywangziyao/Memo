@@ -21,6 +21,9 @@ Everyone can leave a message to that soul, and that message will be shown on the
 This site acts as an online heaven for those who left us. The goal is to build it larger with more functionalities which can help people to memorize their loves and send warm to their family or the uploader.
 
 ## Functionalities / Aspects could be implemented
+### Language Switch
+It is a globally operated site. Every language should be supported!
+
 ### Better UI/UX
 Welcome any talented designer to help contributing to this project with a better design. Let's build a better place for those souls in heaven!
 
