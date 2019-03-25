@@ -67,7 +67,7 @@ body {
 
 #memoSec {
   width: 100%;
-  height: 50px;
+  min-height: 50px;
 }
 
 #dataSec {
@@ -98,10 +98,11 @@ body {
 }
 
 #memoNumber {
-  font-size: 1.1em;
+  font-size: 0.9em;
   height: auto;
-  margin-top: 14px;
+  margin-top: 18px;
   color: white;
+  float: left;
 }
 
 #memoButtonSec {
@@ -239,4 +240,59 @@ body {
 
 .commentBlock:hover {
   opacity: 1;
+}
+
+@media only screen and (max-width: 600px) {
+  #dataSec {
+    width: 70%;
+    float: left;
+    display: inline-block;
+  }
+
+  #memoButtonSec {
+    width: 30%;
+    float: right;
+    display: inline-block;
+  }
+
+  #memoSec {
+    text-align: center;
+  }
+
+  #iconSec {
+    width: 30%;
+  }
+
+  #numberSec {
+    width: 70%;
+  }
+
+  #typeCommentSec {
+    width: 75%;
+  }
+
+  #commentButtonSec {
+    width: 25%;
+  }
+
+  #commentTextField {
+    width: 80%;
+    padding-left: 10px;
+  }
+
+  #middle {
+    padding-bottom: 40px;
+  }
+
+  #backHomeButton {
+    left: 20px;
+  }
+
+  #sloganSec {
+    padding-bottom: 20px;
+  }
+
+  #commentSec {
+    width: 80%;
+  }
 }
