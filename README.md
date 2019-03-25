@@ -55,6 +55,9 @@ This allows people goes to that profile can donate a certain amount of money to 
 ### Donation To The Site
 Currently this site will be operated under the expense of the starter, me. As this project grows, it might exceed my own capability to run. This project needs a donation page to receive funds for the long term running.
 
+### Cultural Diversity
+Since each culture has its own way to memorize the dead, the cultural diversity afffected funtionalites could be designed. This way would show the greatest respect to the dead and their family and friends.
+
 -----------------------
 ## Contact and Comments
 If you have any suggestions or comments, or you want to formally join the team, please send a email to: tonywangziyao@gmail.com
