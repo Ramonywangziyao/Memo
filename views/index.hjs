@@ -12,29 +12,34 @@
           <img src = "/images/logo.png" id = "logo"/>
         </div>
         <div id = "slogan_sec">
-          <p id = "slogan">Wish everyone who is away from us rest in peace.</p>
+          <p id = "slogan">"我想见到你，我知道我再也见不到你，但你的引力仍在，我感激我们的光锥曾彼此重叠，而你永远改变了我的星轨。即便永远不能见面，你仍是我们所在的星系，未曾分崩离析的原因，是宇宙的之网的永恒组成。"</p>
         </div>
       </div>
       <div id = "middle">
         <div id = "leftType">
-            <input type="text" id="hashtagTextfield" placeholder="Please type the hashtag to give your dearest friend the best wishes....">
+            <input type="text" id="hashtagTextfield" placeholder="请输入他/她的标记.....">
         </div>
         <div id = "rightSubmit">
-          <button type="button" id="search">Search</button>
+          <button type="button" id="search">搜索</button>
         </div>
         <div id = "addFriendSec">
-          <button type="button" id="addFriend">+ Memorize a Soul</button>
+          <button type="button" id="addFriend">升起一颗星</button>
         </div>
       </div>
       <div id = "bottom">
         <ul id="bottomMenu">
-          <li id = "bottomMenuLi"><a href = "http://localhost:3000/about" id="bottomMenuItem">About</a></li>
+          <li id = "bottomMenuLi"><a href = "http://localhost:3000/about" id="bottomMenuItem">关于Memo计划</a></li>
           <br/>
           <br/>
-          <li id = "bottomMenuLi">© 2019 Memo project community</li>
-          <li id = "bottomMenuLi"><a href = "https://github.com/Ramonywangziyao/Memo"><img src="/images/githublogo.png"/ id="githublogo"></a></li>
+          <li id = "bottomMenuLi">© 2019 Memo 项目社区</li>
+          <li id = "bottomMenuLi"><a href = "https://github.com/Ramonywangziyao/Memo" target="_blank"><img src="/images/githublogo.png"/ id="githublogo"></a></li>
         </ul>
       </div>
     </div>
+    <script>
+      var hashtagText = document.getElementById("hashtagTextfield");
+      var searchHashtagButton = document.getElementById("search");
+
+    </script
   </body>
 </html>

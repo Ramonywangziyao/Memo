@@ -1,0 +1,242 @@
+body {
+  padding: 0x;
+  margin: auto;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+#frame {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: auto;
+  background-color: black;
+  padding: 0px;
+  margin: auto;
+  position: absolute;
+}
+
+#top {
+  position: relative;
+  height: 10%;
+  width: 100%;
+  min-height: 80px;
+}
+
+#middle {
+  position: relative;
+  min-height: 800px;
+  width: 100%;
+}
+
+#bottom {
+  position: relative;
+  height: 10%;
+  width: 100%;
+  text-align: center;
+  min-height: 110px;
+}
+
+#backHomeButton {
+  position: absolute;
+  left: 50px;
+  text-decoration: none;
+  color: white;
+  font-size: 1.3em;
+  top: 20px;
+}
+
+#nameSec {
+  width: 100%;
+  height: 80px;
+  text-align: center;
+}
+
+#photoSec {
+  width: 100%;
+  height: 250px;
+  text-align: center;
+}
+
+#sloganSec {
+  width: 100%;
+  min-height: 30px;
+  height: auto;
+  text-align: center;
+}
+
+#memoSec {
+  width: 100%;
+  height: 50px;
+}
+
+#dataSec {
+  width: 55%;
+  height: 100%;
+  float: left;
+  display: inline-block;
+}
+
+#iconSec {
+  width: 80%;
+  height: 100%;
+  float: left;
+}
+
+#numberSec {
+  width: 20%;
+  height: 100%;
+  float: right;
+}
+
+#candleIcon {
+  height: 30px;
+  width: 30px;
+  float: right;
+  margin-right: 8px;
+  margin-top: 9px;
+}
+
+#memoNumber {
+  font-size: 1.1em;
+  height: auto;
+  margin-top: 14px;
+  color: white;
+}
+
+#memoButtonSec {
+  width: 45%;
+  height: 100%;
+  float: right;
+  display: inline-block;
+}
+
+#typeSec {
+  width: 100%;
+  height: 50px;
+}
+
+#typeCommentSec {
+  width: 70%;
+  height: 100%;
+  float: left;
+  display: inline-block;
+}
+
+#commentButtonSec {
+  width: 30%;
+  height: 100%;
+  float: right;
+  display: inline-block;
+}
+
+#profileName {
+  position: relative;
+  color: white;
+  margin: auto;
+  font-size: 3em;
+  top: 15px;
+}
+
+#profileImage {
+  position: relative;
+  width: 180px;
+  height: 180px;
+  border-radius: 180px;
+  outline: none;
+  border: 0;
+  top: 30px;
+}
+
+#profileSlogan {
+  position: relative;
+  color: white;
+  margin: auto;
+  font-size: 1.3em;
+  width: 50%;
+}
+
+#memoButton {
+  background-color: #eb7e27;
+  font-size: 1em;
+  margin: auto;
+  margin-top: 10px;
+  color: white;
+  width: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 30px;
+  border-radius: 10px;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}
+
+#memoButton:hover {
+  background-color: #50331c;
+}
+
+#commentTextField {
+  width: 60%;
+  height: 25px;
+  float: right;
+  margin-right: 10px;
+  margin-top: 12px;
+  border-radius: 40px;
+  border: 0;
+  outline: none;
+  padding-left: 20px;
+  font-size: 1em;
+}
+
+#submitCommentButton {
+  background-color: #eb7e27;
+  font-size: 1em;
+  margin: auto;
+  margin-top: 10px;
+  color: white;
+  width: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 30px;
+  border-radius: 10px;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}
+
+#submitCommentButton:hover {
+  background-color: #50331c;
+}
+
+#commentSec {
+  width: 50%;
+  text-align: center;
+  margin: auto;
+}
+
+#commentTable {
+  width: 50%;
+  margin: auto;
+}
+
+.commentBlock {
+  background-color: #313131;
+  font-size: 1em;
+  margin: auto;
+  margin-top: 10px;
+  color: white;
+  width: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+  border: 0;
+  outline: none;
+  opacity: 0.6;
+}
+
+.commentBlock:hover {
+  opacity: 1;
+}

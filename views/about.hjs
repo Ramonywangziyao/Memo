@@ -8,15 +8,15 @@
   <body>
     <div id="frame">
       <div id="top">
-        <a href="http://localhost:3000" id = "backHomeButton"><h3>Home</h3></a>
+        <a href="http://localhost:3000" id = "backHomeButton"><h3>Memo</h3></a>
       </div>
       <div id="middle">
         <div id="title">
-          <h1 id="aboutTitle">/ About</h1>
+          <h1 id="aboutTitle">/ 关于Memo计划</h1>
         </div>
         <div id="content">
           <p id="contentStyle">
-这是一个开源的非盈利性的项目，由主导开发者的一位好友的离世而受到启发。<br/><br/>
+这是一个开源的非盈利性的公益项目，由主导开发者的一位好友的离世而受到启发。<br/><br/>
 
 这个世界每天都有人因为各种原因离开，他们的离去无疑给身边的人带来了莫大的痛苦，而我们唯一能做的，就是在这个世界的某一个角落，为另一个世界寄托一份祝福。<br/><br/>
 
@@ -26,20 +26,21 @@
 
 此网站不鼓励人选择结束生命，但也是对离去的生命最大的尊重。希望能够警示那些选择结束生命的人们积极的生活。<br/><br/>
 
-备注：本网站将由所有人共同维护，进行建造。目前为第一个版本，功能尚未完善，会逐步提高。感谢所有前来纪念自己好友和亲人的人们。<br/><br/>
+逝者安息<br/><br/><br/><br/>
 
-逝者安息
+备注：本网站将由所有人共同维护，进行建造。目前为测试版本，功能尚未完善，会逐步提高。感谢所有前来纪念自己好友和亲人的人们。<br/><br/>
+
 
 </p>
         </div>
       </div>
       <div id = "bottom">
         <ul id="bottomMenu">
-          <li id = "bottomMenuLi"><a href = "http://localhost:3000/about" id="bottomMenuItem">About</a></li>
+          <li id = "bottomMenuLi"><a href = "http://localhost:3000/about" id="bottomMenuItem">关于Memo计划</a></li>
           <br/>
           <br/>
-          <li id = "bottomMenuLi">© 2019 Memo project community</li>
-          <li id = "bottomMenuLi"><a href = "https://github.com/Ramonywangziyao/Memo"><img src="/images/githublogo.png"/ id="githublogo"></a></li>
+          <li id = "bottomMenuLi">© 2019 Memo 项目社区</li>
+          <li id = "bottomMenuLi"><a href = "https://github.com/Ramonywangziyao/Memo" target="_blank"><img src="/images/githublogo.png"/ id="githublogo"></a></li>
         </ul>
       </div>
     </div>

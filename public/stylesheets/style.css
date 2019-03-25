@@ -14,29 +14,30 @@ a {
   left: 0;
   right: 0;
   overflow: auto;
-  background-color: black;
+  background-image: url("/images/backgroundMain.jpg");
   padding: 0px;
   margin: auto;
   position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 #top {
   position: relative;
-  height: 30%;
+  height: 35%;
   width: 100%;
 }
 
 #middle {
   position: relative;
-  height: 40%;
-  background-color: blue;
+  height: 35%;
   width: 100%;
 }
 
 #bottom {
   position: relative;
   height: 30%;
-  background-color: black;
   width: 100%;
   text-align: center;
 }
@@ -44,7 +45,6 @@ a {
 #logo_sec {
   width: 100%;
   position: relative;
-  background-color: black;
   height: 80%;
   text-align: center;
 }
@@ -52,7 +52,6 @@ a {
 #slogan_sec {
   width: 100%;
   position: relative;
-  background-color: black;
   height: 20%;
   text-align: center;
 }
@@ -61,7 +60,7 @@ a {
   position: absolute;
   left: 0;
   right: 0;
-  bottom: 20px;
+  bottom: 50px;
   width: 200px;
   height: auto;
   margin: auto;
@@ -74,13 +73,13 @@ a {
   right: 0;
   color: white;
   margin: auto;
-  font-size: 1.5em;
+  font-size: 1.1em;
+  width: 50%;
 }
 
 #leftType {
   width: 70%;
   height: 30%;
-  background-color: black;
   display: inline-block;
   margin: auto;
   padding: 0;
@@ -90,7 +89,6 @@ a {
 #rightSubmit {
   width: 30%;
   height: 30%;
-  background-color: black;
   display: inline-block;
   position: relative;
   margin: auto;
@@ -130,22 +128,22 @@ a {
 }
 
 #addFriendSec {
-  background-color: black;
   width: 100%;
   height: 70%;
   position: absolute;
   bottom: 0;
   display: block;
+  text-align: center;
 }
 
 #addFriend {
   background-color: #97927f;
   font-size: 1.3em;
-  position: absolute;
-  left: 0;
-  right: 0;
+  position: relative;
   margin: auto;
-  width: 200px;
+  width: auto;
+  padding-left: 20px;
+  padding-right: 20px;
   height: 50px;
   border-radius: 10px;
   border: 0;
@@ -154,5 +152,5 @@ a {
 }
 
 #addFriend:hover {
-  background-color: #bc1c2f;
+  background-color: #eb1c48;
 }

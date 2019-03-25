@@ -2,9 +2,63 @@
 <html>
   <head>
     <title>{{ title }}</title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' href='/stylesheets/general.css' />
+    <link rel='stylesheet' href='/stylesheets/profilePage.css' />
   </head>
   <body>
-    
+    <div id="frame">
+      <div id="top">
+        <a href="http://localhost:3000" id = "backHomeButton"><h3>Memo</h3></a>
+      </div>
+      <div id="middle">
+        <div id = "nameSec">
+          <h1 id = "profileName">Name</h1>
+        </div>
+        <div id = "photoSec">
+          <img src="" id="profileImage"/>
+        </div>
+        <div id = "sloganSec">
+          <p id="profileSlogan">"sample slogan this is a.sample sample sample sample sample sample sample sample sample sample sample sample sample sample sample sample sample sample sample sample sample sample sample sample sample sample sample sample sample sample sample sample "</p>
+        </div>
+        <div id = "memoSec">
+          <div id = "dataSec">
+            <div id = "iconSec">
+              <img src="/images/candleIcon.png" id="candleIcon"/>
+            </div>
+            <div id= "numberSec">
+              <p id="memoNumber">已有 <span style="color:#eb781c"id="numberData">0</span> 个Memo怀念</p>
+            </div>
+          </div>
+          <div id = "memoButtonSec">
+            <button type="button" id="memoButton">怀念</button>
+          </div>
+        </div>
+        <div id = "typeSec">
+          <div id = "typeCommentSec">
+            <input type="text" id="commentTextField" placeholder="有什么想对他说的吗？">
+          </div>
+          <div id = "commentButtonSec">
+            <button type="button" id="submitCommentButton">发布</button>
+          </div>
+        </div>
+        <div id = "commentSec">
+          <button type="button" class="commentBlock">希望他好希望他好希望他好希望他好希望他好希望他好希望他好</button>
+          <button type="button" class="commentBlock">希望他</button>
+          <button type="button" class="commentBlock">希望他好希望他好希望他好</button>
+          <button type="button" class="commentBlock">希望他好希望他好希望他好希望他好</button>
+          <button type="button" class="commentBlock">希望他好希望他好希望他好希望他好</button>
+          <button type="button" class="commentBlock">希望他好</button>
+        </div>
+      </div>
+      <div id = "bottom">
+        <ul id="bottomMenu">
+          <li id = "bottomMenuLi"><a href = "http://localhost:3000/about" id="bottomMenuItem">关于Memo计划</a></li>
+          <br/>
+          <br/>
+          <li id = "bottomMenuLi">© 2019 Memo 项目社区</li>
+          <li id = "bottomMenuLi"><a href = "https://github.com/Ramonywangziyao/Memo" target="_blank"><img src="/images/githublogo.png"/ id="githublogo"></a></li>
+        </ul>
+      </div>
+    </div>
   </body>
 </html>
