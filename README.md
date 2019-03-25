@@ -58,6 +58,9 @@ Currently this site will be operated under the expense of the starter, me. As th
 ### Cultural Diversity
 Since each culture has its own way to memorize the dead, the cultural diversity afffected funtionalites could be designed. This way would show the greatest respect to the dead and their family and friends.
 
+### 烧纸功能
+针对中国文化或亚洲文化群体来纪念死者。可在网站上购买虚拟纸钱或香，通过计时动画的方式可以用来纪念死者。而购买所花费的资金一部分用于网站和这个项目的运作，一部分放入到此项目的中国抑郁症患者的帮助基金会。中国目前抑郁症自杀率高于国际水平，而民间抑郁症组织寥寥无几，或不太成规模，尚未收到广大民众的关注。发起者的朋友还因为抑郁症被家里人用错误的方式进行了治疗，加重了病情。
+
 -----------------------
 ## Contact and Comments
 If you have any suggestions or comments, or you want to formally join the team, please send a email to: tonywangziyao@gmail.com
