@@ -3,6 +3,7 @@
 ----------------------------------------------
 ## Introduction
 This is an open-source & non-profit & public benefit project. It is inspired by the sudden leave of one of my dearest friend. Hope everyone left this world can be commemorated by his/her friends, family and familiar people from anytime and anywhere in the world, and their story will be stored online forever. R.I.P.
+
 -----------------------
 ## Tech
 - Express
@@ -20,9 +21,11 @@ Everyone with the right #hashtag can access that soul's page and offer their uni
 
 ### Leave A Message
 Everyone can leave a message to that soul, and that message will be shown on the site.
+
 -----------------------
 ## Goal
 This site acts as an online heaven for those who left us. The goal is to build it larger with more functionalities which can help people to memorize their loves and send warm to their family or the uploader.
+
 -----------------------
 ## Functionalities / Aspects could be implemented
 ### Language Switch
@@ -51,6 +54,7 @@ This allows people goes to that profile can donate a certain amount of money to 
 
 ### Donation To The Site
 Currently this site will be operated under the expense of the starter, me. As this project grows, it might exceed my own capability to run. This project needs a donation page to receive funds for the long term running.
+
 -----------------------
 ## Contact and Comments
 If you have any suggestions or comments, or you want to formally join the team, please send a email to: tonywangziyao@gmail.com
