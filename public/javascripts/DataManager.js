@@ -80,12 +80,12 @@ module.exports = {
   updateMemoToProfileInDBByHashtag: function(hashtag) {
     return new Promise(function(resolve, reject) {
       // update memo count. psudo code here for now
-      retrieveMemoForProfileInDBByHashtag(hashtag).then(function(profileData) {
+      retrieveMemoForProfileInDBByHashtag(hashtag).then(function(memoCount) {
         Profile.update({
           "hashtag": hashtag
         }, {
           $set: {
-            memo: profileData.memo + 1
+            memo: memoCount + 1
           }
         }, function(err, result) {
           if(err) {
