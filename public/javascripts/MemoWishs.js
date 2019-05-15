@@ -1,4 +1,4 @@
-var dataManager = require('./DataManager.js')
+var dataManager = require('./DataManager.js');
 
 module.exports = {
   addAMemoWishToProfileByHashtag: function(hashtag) {
@@ -8,9 +8,9 @@ module.exports = {
 
         }
 
-        resolve()
-      })
-    })
+        resolve();
+      });
+    });
   },
 
   getMemoWishForProfileByHashtag: function(hashtag) {
@@ -21,7 +21,7 @@ module.exports = {
         }
 
         resolve(memoCount)
-      })
-    })
+      });
+    });
   }
-}
+};

@@ -1,5 +1,5 @@
 var mongoose = require('mongoose')
-var shcema = mongoose.Schema
+var Schema = mongoose.Schema
 
 var profileSchema = new Schema({
   name:{
@@ -22,8 +22,9 @@ var profileSchema = new Schema({
   },
   hashtag: {
     type: String,
-    required: true
+    required: true,
+    unique: true
   }
-})
+});
 
-module.exports = mongoose.model('Profile', profileSchema)
+module.exports = mongoose.model('Profile', profileSchema);

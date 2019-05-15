@@ -1,6 +1,6 @@
-var dataManager = require('./DataManager.js')
-var memoWish = require('./MemoWishs.js')
-var comments = require('./CommentMessage.js')
+var dataManager = require('./DataManager.js');
+var memoWish = require('./MemoWishs.js');
+var comments = require('./CommentMessage.js');
 
 var checkProfileExist = function(hashtag) {
   return new Promise(function(resolve, reject) {
@@ -14,9 +14,9 @@ var checkProfileExist = function(hashtag) {
       } else {
         reject();
       }
-    })
-  })
-}
+    });
+  });
+};
 
 module.exports = {
 
@@ -29,13 +29,13 @@ module.exports = {
           }
 
           if(insertSucceed) {
-            resolve()
+            resolve();
           } else {
-            reject()
+            reject();
           }
-        })
-      })
-    })
+        });
+      });
+    });
   },
 
   retrieveProfile: function(hashtag) {
@@ -46,9 +46,9 @@ module.exports = {
 
           }
 
-          resolve(profile)
-        })
-      })
-    })
+          resolve(profile);
+        });
+      });
+    });
   }
-}
+};

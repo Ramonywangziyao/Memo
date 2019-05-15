@@ -1,10 +1,18 @@
-const mongoose = require('mongoose')
-mongoose.connect('mongodb://localhost:27017/memo')
-const profileSchema = require('../Schema/profile.model')
+const mongoose = require('mongoose');
+var profileSchema = require('./Schema/profile.model');
 
-const db = mongoose.connection
+const db = 'mongodb://localhost:27017/memo';
+mongoose.connect(db, {
+  useNewUrlParser: true
+});
+var dbConnection = mongoose.connection;
 
-var Profile = mongoose.model('Profile', profileSchema, 'profile')
+//var Profile = mongoose.model('Profile', profileSchema, 'profile')
+
+dbConnection.on('error', console.error.bind(console, "Connection Error"));
+dbConnection.on('open', function(){
+  console.log("Connected to mongodb");
+});
 
 
 module.exports = {
@@ -14,15 +22,15 @@ module.exports = {
         hashtag: hashtag
       }, function(err, data) {
         if(err) {
-          throw err
+          throw err;
         }
         if(data != null) {
-          resolve(true)
+          resolve(true);
         } else {
-          resolve(false)
+          resolve(false);
         }
-      })
-    })
+      });
+    });
   },
 
   retrieveProfileDataFromDBByHashtag: function(hashtag) {
@@ -31,32 +39,41 @@ module.exports = {
         hashtag: hashtag
       }, function(err, data) {
         if(err) {
-          throw err
+          throw err;
         }
         if(data != null) {
-          resolve(data)
+          resolve(data);
         } else {
-          reject("Profile not found.")
+          reject("Profile not found.");
         }
-      })
-    })
+      });
+    });
   },
 
   insertProfileToDB: function(profile) {
     return new Promise(function(resolve, reject) {
-      var profile = new profileSchema({
+      var profileInstance = new profileSchema({
         // init profile info here. implement later
-      })
+        name: profile.name,
+        memo: profile.memo,
+        intro: profile.intro,
+        comments: profile.comments,
+        datePassed: profile.datePassed,
+        hashtag: profile.hashtag
+      });
 
-      Profile.save(function(err, res) {
+      console.log(profileInstance);
+
+      profileInstance.save(function(err, res) {
+        console.log(err);
         if(err) {
-          reject("Error. Unable to insert profile")
+          reject("Error. Unable to insert profile");
         } else {
           // saved
-          resolve(true)
+          resolve(res);
         }
-      })
-    })
+      });
+    });
   },
 
   insertCommentToProfileInDB: function(hashtag, comment) {
@@ -69,12 +86,12 @@ module.exports = {
         }
       }, function(err, result) {
         if(err) {
-          reject("Error. Unable to insert comment")
+          reject("Error. Unable to insert comment");
         } else {
-          resolve("Inserted comment to profile")
+          resolve("Inserted comment to profile");
         }
-      })
-    })
+      });
+    });
   },
 
   updateMemoToProfileInDBByHashtag: function(hashtag) {
@@ -89,13 +106,13 @@ module.exports = {
           }
         }, function(err, result) {
           if(err) {
-            reject("Error. Unable to update memo")
+            reject("Error. Unable to update memo");
           } else {
-            resolve("Profile memo count updated")
+            resolve("Profile memo count updated");
           }
-        })
-      })
-    })
+        });
+      });
+    });
   },
 
   retrieveMemoForProfileInDBByHashtag: function(hashtag) {
@@ -104,15 +121,15 @@ module.exports = {
         hashtag: hashtag
       }, function(err, data) {
         if(err) {
-          throw err
+          throw err;
         }
         if(data != null) {
-          var memoAmount = data.memo
-          resolve(memoAmount)
+          var memoAmount = data.memo;
+          resolve(memoAmount);
         } else {
-          reject("Error retrieving memo data")
+          reject("Error retrieving memo data");
         }
-      })
-    })
+      });
+    });
   }
-}
+};

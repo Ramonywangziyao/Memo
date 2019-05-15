@@ -2,30 +2,30 @@ var removePonSign = function(hashtag) {
   // implementation remove # in front of a Hashtag
   return new Promise(function(resolve, reject) {
     if(hashtag == null || hashtag === null) {
-      reject("error")
+      reject("error");
     }
 
-    var ponIndex = hashtag.indexOf("#")
+    var ponIndex = hashtag.indexOf("#");
 
     if(ponIndex == 0) {
-      resolve(hashtag.substring(1, hashtag.length))
+      resolve(hashtag.substring(1, hashtag.length));
     } else {
-      resolve(hashtag)
+      resolve(hashtag);
     }
-  })
-}
+  });
+};
 
 var removeExtraSpace = function(hashtag) {
   // implementation remove extra space from left and right
   return new Promise(function(resolve, reject) {
     if(hashtag == null || hashtag === null) {
-      reject("error")
+      reject("error");
     }
 
-    resolve(hashtag.replace(/(^\s+)|(\s+$)/g, ""))
+    resolve(hashtag.replace(/(^\s+)|(\s+$)/g, ""));
 
-  })
-}
+  });
+};
 
 module.exports = {
   processHashtag: function(hashtag) {
@@ -36,7 +36,7 @@ module.exports = {
         })
       }).catch(function(errMessage) {
         console.log(errMessage)
-      })
-    })
+      });
+    });
   }
-}
+};
