@@ -6,13 +6,13 @@ var sampleProfile = {
   "intro": "he is a good guy",
   "comments": [],
   "datePassed": "20190501",
-  "hashtag": "lin1"
+  "hashtag": "wuruoyumimi"
 }
 
 // insert profile
 
-dataManager.insertProfileToDB(sampleProfile).then(function(inserted) {
-  console.log(inserted)
+dataManager.checkProfileExistInDBByHashtag("zi", false).then(function() {
+  console.log(arguments[0]);
 })
 
 

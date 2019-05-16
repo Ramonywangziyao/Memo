@@ -16,36 +16,24 @@ dbConnection.on('open', function(){
 
 
 module.exports = {
-  checkProfileExistInDBByHashtag: function(hashtag) {
+  checkProfileExistInDBByHashtag: function(hashtag, needDataFlag) {
     return new Promise(function(resolve, reject) {
-      Profile.find({
+      profileSchema.find({
         hashtag: hashtag
       }, function(err, data) {
         if(err) {
           throw err;
         }
-        if(data != null) {
-          resolve(true);
-        } else {
-          resolve(false);
-        }
-      });
-    });
-  },
 
-  retrieveProfileDataFromDBByHashtag: function(hashtag) {
-    return new Promise(function(resolve, reject) {
-      Profile.find({
-        hashtag: hashtag
-      }, function(err, data) {
-        if(err) {
-          throw err;
-        }
-        if(data != null) {
-          resolve(data);
+        var dataExist = data.length > 0 ? true : false;
+
+        if(needDataFlag) {
+          var returnedData = dataExist? data[0] : null;
+          resolve(returnedData);
         } else {
-          reject("Profile not found.");
+          resolve(dataExist);
         }
+
       });
     });
   },
